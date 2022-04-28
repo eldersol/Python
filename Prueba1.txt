@@ -1,0 +1,28 @@
+Ejercicio Python
+
+Cada tarea y subtarea pueden resolverse en cualquier orden y de forma individual.
+Cada uno de los 2 ejercicios deben ser inicializados y subidos a un repositorio git público como medio de entrega.
+Tiempo disponible: 90 minutos.
+
+Ejemplo de contenido de archivo data_ids.csv con lista de IDs:
+  8118825
+  8131330
+  8137836
+  8142170
+  8145987
+  8179461
+  8192925
+  8199834
+  8216207
+  8230465
+...
+
+1. Dado un archivo de texto con una lista de IDs:
+a. Dividir el archivo a la mitad.
+b. Generar un archivo de sentencias SQL por cada mitad que por ID haga UPDATE en la tabla "suscripcion" del atributo "estado" a False.
+
+
+2. Dado un archivo de texto con una lista de IDs:
+a. Generar archivo de sentencias SQL con la sentencia de UPDATE en la tabla "suscripcion" del atributo "estado" a False, pero en lotes de 100 IDs por UPDATE.
+
+
