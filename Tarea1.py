@@ -8,7 +8,7 @@ def split_list(lista):
 
 with open('data_ids.csv') as archivo:
     contenido = csv.reader(archivo, delimiter=',', quotechar=' ')
-    archivo1 = open("suscripcion.sql","w") 
+    archivo1 = open("Archivo1.sql","w") 
     lista = []
 
     for linea in contenido:
