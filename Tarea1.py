@@ -8,7 +8,8 @@ def split_list(lista):
 
 with open('data_ids.csv') as archivo:
     contenido = csv.reader(archivo, delimiter=',', quotechar=' ')
-    archivo1 = open("Archivo1.sql","w") 
+    archivo1_1 = open("Archivo1_1.sql","w") 
+    archivo1_2 = open("Archivo1_2.sql","w") 
     lista = []
 
     for linea in contenido:
@@ -18,8 +19,12 @@ with open('data_ids.csv') as archivo:
     #print(mitad1)
     
     for ids in mitad1:    
-        archivo1.write("UPDATE suscripcion SET estado = false WHERE ID=" + str(ids) + ";\n") 
+        archivo1_1.write("UPDATE suscripcion SET estado = false WHERE ID=" + str(ids) + ";\n") 
+
+    for ids in mitad2:    
+        archivo1_2.write("UPDATE suscripcion SET estado = false WHERE ID=" + str(ids) + ";\n") 
     
-    archivo1.close() 
+    archivo1_1.close() 
+    archivo1_2.close() 
 
 
